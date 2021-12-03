@@ -272,7 +272,7 @@ def load_data(data_folder):
 
 def main():
     counter = 0
-    verbose = False
+    verbose = True
     for row in load_data('.'):
         if verbose:
             print(json.dumps(row, sort_keys=True, indent=2))
